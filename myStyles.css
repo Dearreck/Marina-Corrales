@@ -1,0 +1,9 @@
+/* utility */
+/* html.sr .load-hidden {
+    visibility: hidden;
+} */
+
+/* extension */
+html.sr .widget {
+    visibility: hidden;
+}

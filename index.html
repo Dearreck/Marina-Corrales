@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Escolar «Marina Corrales»</title>
+    <link rel="shortcut icon" href="images/Flag_map_of_Nicaragua.svg" type="image/svg+xml">
+
+    <!-- Importar Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="myStyles.css">
+
+    <!-- My Script -->
+    <script defer src="main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg bg-warning bg-gradient sr-effect">
+            <div class="container-fluid">
+                <a class="navbar-brand text-primary" href=".">
+                    <img src="images/Flag_map_of_Nicaragua.svg" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    «Marina Corrales»
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contáctenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">API test</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar">
+                        <button class="btn btn-outline-light text-dark" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <section class="mb-1 text-white sr-effect" style="background-image: url('images/bg.png');">
+            <div class="container-fluid py-5">
+                <h1 class="display-6 fw-bold">Nuestros Estudiantes</h1>
+                <p class="col-md-8 fs-5">Información pública de todos nuestros estudiantes.</p>
+                <button class="btn btn-primary btn-lg" type="button">Mostrar</button>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-2">
+            <div class="col sr-effect sr-effect-right">
+                <div class="card h-100">
+                    <img src="images/Mejor Estudiante.jpg" class="card-img-top" alt="Mejor Estudiante">
+                    <div class="card-body best-student">
+                        <h5 class="card-title">Dearreck Ottoniel Escoto</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                    <div class="text-center mb-2 p-2 d-grid">
+                        <button class="btn btn-primary" id="btn-best-student">Ocultar Descripción</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Mejor Estudiante - I Semestre</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col sr-effect">
+                <div class="card h-100">
+                    <img src="images/Mejor Docente.jpg" class="card-img-top" alt="Mejor Docente">
+                    <div class="card-body best-teacher">
+                        <h5 class="card-title">Marylin Padilla Escalante</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                    </div>
+                    <div class="text-center mb-2 p-2 d-grid">
+                        <button class="btn btn-primary " id="btn-best-teacher">Ocultar Descripción</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Mejor Docente - I Semestre</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col sr-effect sr-effect-left">
+                <div class="card h-100">
+                    <img src="images/Mejor Personal.png" class="card-img-top" alt="Mejor Personal Administrativo">
+                    <div class="card-body best-admin">
+                        <h5 class="card-title">Daveyba Silva Gómez</h5>
+                        <p class="card-text">Agradecemos todas las atenciones prestadas tanto al personal docente como al personal administrativo. Sin embargo, este reconocimiento es hecho por parte del alumnado del Centro. ¡FELICITACIONES!</p>
+                    </div>
+                    <div class="text-center mb-2 p-2 d-grid">
+                        <button class="btn btn-primary" id="btn-best-admin">Ocultar Descripción</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Mejor Personal Administrativo</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
